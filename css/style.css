@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.title {
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.279), hsla(317, 95%, 50%, 0.227)), url(../img/bg-image.png);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.279), hsla(317, 95%, 50%, 0.227)), url(../img/bg-image.png);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav>a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+header .header-texts {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-texts h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.header-texts h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*About Us*/
+.about-us-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-us-image {
+    width: 48%;
+}
+
+.about-us .container-text {
+    width: 48%;
+}
+
+.container-text {
+    margin-bottom: 15px;
+}
+
+.container-text h3 span {
+    font-size: 18px;
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.container-text p {
+    padding: 10px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.4rem;
+}
+
+/*Portfolio*/
+.gallery-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image-port {
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    height: 150px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.image-port>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* transform: scale(0); */
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gallery-hover>img {
+    width: 50px;
+}
+
+.gallery-hover p {
+    color: #fff
+}
+
+.image-port:hover .gallery-hover {
+    transform: scale(0);
+}
+
+/*Clients*/
+.clients {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cards{
+    display: flex;
+    align-items: cener;
+    justify-content: space-between;
+}
+.card{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background-color:#4d0686;
+    padding: 30px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.card-text p{
+    margin-top: 4px;
+    font-size: 14px;
+    text-align: justify;
+    font-weight: lighter;
+    line-height: 1.4rem;
+}
